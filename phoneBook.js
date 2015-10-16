@@ -153,7 +153,7 @@ module.exports.showTable = function showTable() {
 };
 
 function isNameValid(name) {
-    var regexp = /[A-zА-я\d ]+/;
+    var regexp = /[A-zА-Яа-яёЁ\d ]+/;
     return regexp.test(name);
 }
 
@@ -164,7 +164,7 @@ function isPhoneValid(phone) {
 
 
 function isEmailValid(email) {
-    var regexp = /^[A-z\d\-\_]+@([A-zА-я\d\-]+\.)+[A-zА-я]+$/;
+    var regexp = /^[A-z\d\-\_]+@([A-zА-Яа-яёЁ\d\-]+\.)+[A-zА-Яа-яёЁ]+$/;
     return regexp.test(email);
 }
 
